@@ -1,0 +1,12 @@
+/* QRCodeGenerator.css */
+.qr-container {
+    margin-top: 20px;
+  }
+  
+  .qr-code-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Add any additional styling you need for your QRCodeGenerator component here */
+  

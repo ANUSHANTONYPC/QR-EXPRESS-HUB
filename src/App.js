@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { Card, Col, Row } from 'react-bootstrap';
+import QRCodeGenerator from './components/QRCodeGenerator';
+import './App.css'; // Import a custom CSS file for additional styling
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Row>
+        <Col md={6} className="mb-4 text-center">
+          <h1 className="app-title">ℚℝ 𝔼𝕩𝕡𝕣𝕖𝕤𝕤 ℍ𝕦𝕓</h1>
+        </Col>
+      </Row>
+
+      <Col md={6} className="mb-4 mt-3 d-flex justify-content-center">
+        <Card className="shadow">
+          <Card.Body>
+            <QRCodeGenerator />
+          </Card.Body>
+        </Card>
+      </Col>
     </div>
   );
-}
+};
 
 export default App;
